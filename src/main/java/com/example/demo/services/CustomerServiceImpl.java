@@ -1,6 +1,7 @@
 package com.example.demo.services;
 
 import com.example.demo.domain.Actor;
+import com.example.demo.domain.Movie;
 import com.example.demo.repository.ActorRepository;
 import com.example.demo.transfer.KeyValue;
 import lombok.RequiredArgsConstructor;
@@ -20,11 +21,13 @@ public class CustomerServiceImpl extends com.example.demo.services.AbstractServi
 		return ActorRepository;
 	}
 
-
 	@Override
-	public Actor findByEmail(String email) {
-		return null;
+	public Actor findByName(String firstname) {
+
+		return ActorRepository.findByName(firstname);
 	}
+
+
 
 	@Override
 	public List<KeyValue<String, BigDecimal>> findCustomersPurchasedMostExpensiveProduct() {

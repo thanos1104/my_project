@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public interface CustomerService extends BaseService<Actor, Long> {
-	Actor findByEmail(String email);
+	Actor findByName(String firstname);
 
 	List<KeyValue<String, BigDecimal>> findCustomersPurchasedMostExpensiveProduct();
 

@@ -21,7 +21,7 @@ import javax.persistence.*;
 @EqualsAndHashCode(callSuper = true)
 public class Actor extends com.example.demo.domain.BaseEntity {
 
-	@Column(length = 50, nullable = false, unique = true)
+	@Column(length = 50, nullable = false, unique = false)
 	private String email;
 
 
